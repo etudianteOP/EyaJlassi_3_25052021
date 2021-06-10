@@ -5,10 +5,7 @@
  body
  {
     font-family: 'Roboto';
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
-    margin-left: 80px;
+    margin-left: 90px;
  }
  .loader {
     position: fixed;
@@ -82,10 +79,11 @@
   }
 
  header{
-    font-family: 'Shrikhand';font-size: 22px;
+    font-family: 'Shrikhand';
+    font-size: 22px;
     width: 300px;
-    font-size: 0.9em;
-    margin-left:130px ;
+    font-size: 1.2em;
+    margin-left:90px ;
 }
 
 
@@ -119,11 +117,10 @@ form{
     background-color: rgb(231, 231, 231);
     font-size: 1em;
     -webkit-text-decoration:hsl(204, 8%, 12%);
-            text-decoration:hsl(204, 8%, 12%);
+    color: rgb(49, 46, 46);
     padding-left: 0px;
     padding-right: 0px;
     margin-right: 5px;
-    
 }
 #bloc_page h2{
    width: 250px;
@@ -247,31 +244,44 @@ box-shadow: 3px 3px 6px rgb(173, 167, 167);
     background: #99e2d0;
     color: #359c83;
     font-weight: 500;
-    padding: 0.33rem;
+    padding: 10px;
     border-radius: 3%;
     margin: 1rem;
+    
 }
 .card-image img{
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     width: 300px;
+    padding-left: 0px;
+    margin-left: 0px;
     object-fit: cover;
 }
 #resto a{
     text-decoration: none;
     color: black;
+   
 }
 
 .card1, .card2, .card3, .card4, h3{
-    margin-top: 20px;
+    margin-top: 0px;
     margin-left: 10px;
-    margin-bottom: 10px;
-    line-height: 0px;
+    margin-bottom: 20px;
+    line-height: 5px;
+}
+.card-title, h3
+{
+margin-left: 20px;
+}
+.card-title1, h3
+{
+margin-left: 20px;
 }
 .card1, .card2, .card3, .card4, p{
     line-height: 5px;
-    margin-left: 10px;
+    margin-left: 20px;
 }
+
 #parttwo{
     display: flex;
 }
@@ -280,10 +290,10 @@ box-shadow: 3px 3px 6px rgb(173, 167, 167);
 
 }
 .card-title{
-    margin-right: 100px;
+    margin-right: 70px;
     }
 .card-title1{
-    margin-right: 140px;
+    margin-right: 110px;
 }
 #toggle-heart, #toggle-heart2, #toggle-heart3, #toggle-heart4 {
  position: absolute;
@@ -345,7 +355,7 @@ label {
     width: 400px;
     height: 200px;
     background-color:rgb(61, 60, 60);
- 
+    margin:0;
     color: white;
 }
 #sec-ft h4{
@@ -372,71 +382,131 @@ label {
     margin-right: 10px;
 }
 #list2 p{
-    margin-left: 5px;
+    margin-left: 2px;
    
 }
 
 /* debut de menu palettedugout*/
-.header h1 {
+
+.header2 h1 {
    
     font-family: 'Shrikhand';
     width: 330px;
     font-size: 2.6em;
-    margin-left:0px ;
+    margin-left:65px ;
 }
-.header a {
+.header2 a {
     position: absolute;
     left: 1.5rem;
     font-size: x-large;
     text-align: center;
 }
-.fa, .fas {
-    font-family: "Font Awesome 5 Pro";
-    font-weight: 900;
+.header2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+   
+}
+.main-menu{
+    width: 600px;
+   
 }
 .fa-arrow-left:before {
     content: "\f060";
 }
 
-.body {
-    margin: 0;
-    padding: 0;
-    font-family: Roboto;
+.body2 {
+    font-family: 'Roboto';
+    margin-left: 0px;
+    background-color: #F2F2F2;
 }
-#menu .card-image{
+.main-menu img{
    
-    width: 450px;
-    height: 200px;
+    width: 603px;
+    height: 230px;
     object-fit: cover;
 
 }
-.card-title{
-    display: flex;
+section{
+    display: block;
+    margin-bottom: 10px;
+    
 }
- 
+section h3{
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
 
- #menu-entree  h3 {
- font-weight: 300;
- margin: 0;
-        }
+.title{
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 2rem 1rem 1rem;
+    width: 555px;
+    margin: 0px;
+    justify-content: space-between;
+    position: relative;
+    margin-top: -2rem;
+    border-radius: 30px 30px 0px 0px;
+    background-color: #F2F2F2;
+    z-index: 1;
+    }
+#titre-de-menu, .title h3{
+    font-family: Shrikhand;
+    letter-spacing: 0.008rem;
+    font-size: 1.3em;
+    padding-left: 5px;
+    
+}
 
- #menu-entree hr {
+
+#menu-entree{
+ width: auto;
+ padding-left: 20px;
+}
+h3 {
+    display: block;
+    font-size: 1.30em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+   
+}
+#menu-plat-principal  h3{
+    margin-left: 20px;
+}
+#menu-dessert  h3{
+    margin-left: 20px;
+}
+
+
+ #menu-entree hr{
     height: 3.5px;
     background-color: #99e2d0;
-    width: 0.8rem;
-    display: inline
-    }
-    hr {
-        display: block;
-        unicode-bidi: isolate;
-        margin-block-start: 0.5em;
-        margin-block-end: 0.5em;
-        margin-inline-start: auto;
-        margin-inline-end: auto;
-        overflow: hidden;
-        border-style: inset;
-        border-width: 1px;
-    }
+    width: 2.8rem;
+    display: inline-block;
+    border: none;
+   
+}
+
+#menu-plat-principal hr{
+    height: 3.5px;
+    background-color: #99e2d0;
+    width: 2.8rem;
+    display: inline-block;
+    border: none;
+    margin-left: 20px;
+}
+#menu-dessert hr{
+    height: 3.5px;
+    background-color: #99e2d0;
+    width: 2.8rem;
+    display: inline-block;
+    border: none;
+    margin-left: 20px;
+}
     
     #menu-entree ul {
         display: flex;
@@ -444,24 +514,71 @@ label {
         list-style-type: none;
         padding: 0;
         gap: 1rem;
+       margin-left: 15px;
+       
     }
-    .pop-menu-entree {
-        animation: anime-menu-bulle 1s both;
-        animation-delay: 0.1s;
+    #menu-entree ul li{
+        margin-bottom: 0px;
+        margin-top: 0px;
+     
     }
-    ul {
-        display: block;
-        list-style-type: disc;
-        margin-block-start: 1em;
-        margin-block-end: 1em;
-        margin-inline-start: 0px;
-        margin-inline-end: 0px;
-        padding-inline-start: 40px;
+
+    .pop-menu-entree li{
+        display: flex;
+        background-color:white;
+        width: 500px;
+        margin-left: 10px;
+        height: 90px;
+       
+        
     }
-    b {
-        font-weight: bold;
+
+  
+    .vignets {
+    
+        animation:  12s;
+        -webkit-animation:  2s; 
     }
-    .menu-bulle_detail {
+    @keyframes vignets {
+        0% {
+            opacity: 0;
+    transform-origin: 50% bottom;
+    transform: scale(0);
+        }
+        70% {
+            transform-origin: 50% bottom;
+    transform: scaleY(1);
+    opacity: 0.8;
+        }
+        100% {
+            opacity: 1;
+    transform: scale(1);
+    transform-origin: 50% bottom;
+        }
+
+    }
+   
+    @-webkit-keyframes vignets { 
+        0% {
+            opacity: 0;
+    transform-origin: 50% bottom;
+    transform: scale(0);
+        }
+        50% {
+            transform-origin: 50% bottom;
+    transform: scaleY(1);
+    opacity: 0.8;
+        }
+        100% {
+            opacity: 1;
+    transform: scale(1);
+    transform-origin: 50% bottom;
+        }
+
+    }
+     
+    
+    .menu-bulle-detail {
         align-self: center;
         padding-left: 0.8rem;
         flex: 1;
@@ -469,11 +586,11 @@ label {
         overflow: hidden;
         white-space: nowrap;
     }
-    .menu-bulle_prix {
+    .menu-bulle-prix {
         align-self: flex-end;
         padding: 0 1.5rem 0.8rem 0.6rem;
     }
-    .selection_plat {
+    .selection-plat {
         position: absolute;
         top: 0;
         right: 0;
@@ -484,34 +601,129 @@ label {
         z-index: 2;
         opacity: 0;
     }
-    input[type="radio" i] {
-        background-color: initial;
-        cursor: default;
-        appearance: auto;
-        box-sizing: border-box;
-        margin: 3px 3px 0px 5px;
-        padding: initial;
-        border: initial;
-    }
-    .platcheck {
-        background-color: #99e2d0;
-        border-radius: 0 15px 15px 0px;
+   
+    .menu-bulle{
+        animation: anime-menu-bulle 1s both;
+        counter-increment: li;
+        background: #f6f6f6;
+        border-radius: 20px;
         display: flex;
         align-items: center;
-        justify-content: center;
-        width: 4rem;
-        margin-right: -4rem;
-        transition: margin-right 0.25s linear;
+        margin-top: 1rem;
+        height: 5rem;
+        box-shadow: 5px 5px 5px rgb(0 0 0 / 15%);
+        list-style-type:none;
+        width: 450px;
     }
-    .platcheck i {
-        color: white;
-        transition: transform 500ms ease-in-out;
-    }
-    .fa-check-circle:before {
-        content: "\f058";
-        
+    .menu-bulle-detail{
+        width: 400px;
+        padding-left: 0px;
+        justify-content: start;
+
     }
 
+    .menu-bulle-detail p {
+        padding-left: 0px;
+    }
+    .menu-bulle-detail b {
+    
+        
+            padding-left: 10px;
+            flex: 1;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+    
+    .menu-bulle-prix b{
+        padding-left: 30px;
+    }
+   
+    
+    
+    .platcheck {
+        
+            background-color: #99e2d0;
+            border-radius: 0 15px 15px 0px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 5rem;
+            height: 5.6rem;
+            margin-right: 0rem;
+            transition: margin-right 0.25s linear;
+            transition-property: margin-right;
+            transition-duration: 0.80s;
+            transition-timing-function: linear;
+            transition-delay: 0s;
+        }
+    .platcheck i {
+         
+            color: white;
+            transition: transform 500ms ease-in-out;
+        }
+    
+    
+/*----  btn cmd------*/
+    .btn {
+    border-radius: 30px;
+   margin-left: 190px;
+   margin-top: 50px;
+   width: 200px;
+   height: 50px;
+   padding: 10px;
+   background: linear-gradient(#ff79da, #9356dc);
+   color: white;
+   border: none;
+   box-shadow: 3px 3px 6px rgb(173, 167, 167);
+   
+}
+.btn:hover {
+    background: linear-gradient(#ff93e1, #a16be0);
+    box-shadow: 5px 5px 5px rgb(0 0 0 / 25%);
+}
+.btn a{
+    text-decoration: none;
+    color:white;
+}
+    /*-----footer-----*/
+#sec-ft2{
+    width: 600px;
+    height: 200px;
+    background-color:rgb(61, 60, 60);
+    margin:0;
+    color: white;
+}
+#sec-ft2 h4{
+    font-family: 'Shrikhand';
+    font-size: 1.2em;
+    padding-left: 45px;
+    padding-top: 30px;
+    padding-bottom: 0px;
+    
+}
+#list1 li a {
+    text-decoration: none;
+    color:white;
+    
+}
+#sec-ft2 li{
+
+    list-style-type: none;
+}
+#list22{
+    margin-left: 5px;
+}
+#list22 i{
+    margin-right: 10px;
+}
+#list33 p{
+    margin-left: 2px;
+   
+}
+
+
+    
 
 
 
